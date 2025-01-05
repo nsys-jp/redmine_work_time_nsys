@@ -1,4 +1,4 @@
-class WtMemberOrder < ActiveRecord::Base
+class WtMemberOrder < (defined?(ApplicationRecord) == 'constant' ? ApplicationRecord : ActiveRecord::Base)
   #attr_accessible :user_id, :position, :prj_id
 
   # private

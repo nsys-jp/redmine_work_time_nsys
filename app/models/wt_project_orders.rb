@@ -1,4 +1,4 @@
-class WtProjectOrders < ActiveRecord::Base
+class WtProjectOrders < (defined?(ApplicationRecord) == 'constant' ? ApplicationRecord : ActiveRecord::Base)
   #attr_accessible :uid, :dsp_prj, :dsp_pos
 
   # private

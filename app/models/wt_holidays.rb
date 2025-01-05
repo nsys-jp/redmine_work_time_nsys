@@ -1,4 +1,4 @@
-class WtHolidays < ActiveRecord::Base
+class WtHolidays < (defined?(ApplicationRecord) == 'constant' ? ApplicationRecord : ActiveRecord::Base)
   #attr_accessible :holiday, :created_on, :created_by
 
   #private

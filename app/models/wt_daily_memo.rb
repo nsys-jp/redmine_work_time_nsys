@@ -1,4 +1,4 @@
-class WtDailyMemo < ActiveRecord::Base
+class WtDailyMemo < (defined?(ApplicationRecord) == 'constant' ? ApplicationRecord : ActiveRecord::Base)
   #attr_accessible :user_id, :day, :created_on, :updated_on, :description
 
   # private

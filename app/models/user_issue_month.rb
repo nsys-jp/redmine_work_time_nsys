@@ -1,4 +1,4 @@
-class UserIssueMonth < ActiveRecord::Base
+class UserIssueMonth < (defined?(ApplicationRecord) == 'constant' ? ApplicationRecord : ActiveRecord::Base)
   #attr_accessible :uid, :issue, :odr
 
   #private

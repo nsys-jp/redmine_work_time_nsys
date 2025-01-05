@@ -1,4 +1,4 @@
-class WtTicketRelay < ActiveRecord::Base
+class WtTicketRelay < (defined?(ApplicationRecord) == 'constant' ? ApplicationRecord : ActiveRecord::Base)
   #attr_accessible :issue_id, :position, :parent
 
   # private
